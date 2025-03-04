@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Dashboard</a>
+        <a href="patients.html">Patients</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+    </div>
+
+    <div class="container">
+        <h1>Manage Patients</h1>
+        <form id="patient-form">
+            <input type="text" id="name" placeholder="Patient Name" required>
+            <input type="number" id="age" placeholder="Patient Age" required>
+            <input type="text" id="contact" placeholder="Contact Number" required>
+            <input type="text" id="gender" placeholder="Patient Gender" required>
+            <button type="submit">Add Patient</button>
+        </form>
+
+        <h2>Patient List</h2>
+        <ul id="patient-list"></ul>
+    </div>
+    <div class="exit-container"></div>
+        <button class="exit-button" onclick="exitPage()">Exit</button>
+    </div>
+</div>
+<script src="doctors.js"></script>
+    <script>
+        function exitPage() {
+            window.location.href = 'index1.html';  // Redirect to the dashboard or any other page
+        }
+    </script>
+    <script src="doctors.js"></script>
+</body>
+</html>
